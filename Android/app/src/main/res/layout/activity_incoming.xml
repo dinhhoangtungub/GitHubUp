@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.IncomingActivity"
+    android:background="@drawable/button_bg"
+    >
+
+
+    <ProgressBar
+        android:id="@+id/animationView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="84dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_url="https://assets7.lottiefiles.com/packages/lf20_na4lb3yr.json" />
+
+
+    <ProgressBar
+        android:id="@+id/imgAvatar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="184dp"
+        android:background="@drawable/circle_bg"
+        android:elevation="2dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_oval="true"
+        tools:ignore="UseAppTint" />
+
+    <ImageView
+        android:id="@+id/imageAccept"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/circle_blue"
+        android:elevation="2dp"
+        android:padding="@dimen/_13sdp"
+        android:src="@drawable/ic_baseline_call_24"
+        android:tint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.319"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="UseAppTint" />
+
+
+    <ImageView
+        android:id="@+id/imageStop"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/circle_cancel"
+        android:elevation="2dp"
+        android:padding="@dimen/_13sdp"
+        android:src="@drawable/ic_baseline_call_end_24"
+        android:tint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.648"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="UseAppTint" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="388dp"
+        android:text="Incomming"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.557"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
