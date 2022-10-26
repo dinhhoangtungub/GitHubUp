@@ -7,8 +7,7 @@
     android:clipToPadding="false"
     android:overScrollMode="never"
     android:padding="@dimen/_24sdp"
-    android:scrollbars="none"
-    tools:context=".activities.SignInActivity">
+    android:scrollbars="none">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -43,20 +42,21 @@
             android:textSize="@dimen/_13ssp"
             android:textStyle="normal"
             />
+
         <EditText
             android:id="@+id/inputEmail"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_45sdp"
             android:layout_marginTop="-20dp"
+            android:fontFamily="@font/roboto_light"
             android:imeOptions="actionNext"
             android:importantForAutofill="no"
             android:inputType="textEmailAddress"
             android:paddingStart="@dimen/_16sdp"
             android:paddingEnd="@dimen/_16sdp"
             android:textColor="@color/primary_text"
-            android:fontFamily="@font/roboto_light"
             android:textSize="@dimen/_13ssp"
-            tools:ignore="LabelFor" />
+            tools:ignore="LabelFor,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -71,6 +71,7 @@
             android:layout_height="@dimen/_45sdp"
             android:layout_marginTop="-16sp"
             >
+
             <EditText
                 android:id="@+id/inputPassword"
                 android:layout_width="match_parent"
@@ -83,7 +84,7 @@
                 android:paddingEnd="@dimen/_16sdp"
                 android:textColor="@color/primary_text"
                 android:textSize="@dimen/_13ssp"
-                tools:ignore="LabelFor" />
+                tools:ignore="LabelFor,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
         </FrameLayout>
 
@@ -118,7 +119,7 @@
                 android:elevation="@dimen/_5sdp"
                 />
 
-            <ProgressBar
+            <androidx.appcompat.widget.AppCompatImageView
                 android:layout_marginTop="@dimen/_10sdp"
                 android:layout_marginBottom="@dimen/_10sdp"
                 android:id="@+id/progressBar"

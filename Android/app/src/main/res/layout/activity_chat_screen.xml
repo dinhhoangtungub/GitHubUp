@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/setImageScreen"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".activities.ChatScreenActivity">
-    <!--    android:background="@drawable/bg_5"-->
+    android:layout_height="match_parent">
+    android:background="@drawable/bg_5"
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView3"
         android:layout_width="match_parent"
@@ -249,7 +248,7 @@
             android:src="@drawable/ic_baseline_send_24"
             app:tint="@color/colorGray"
 
-            />
+            tools:ignore="ImageContrastCheck" />
 
 
     </FrameLayout>
@@ -305,12 +304,13 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
+                android:fontFamily="@font/roboto_light"
                 android:hint="@string/type_a_message"
                 android:paddingStart="@dimen/_10sdp"
                 android:textColor="@color/colorTextPrimary"
+                android:textColorHint="#757575"
                 android:textSize="@dimen/_14ssp"
-                android:fontFamily="@font/roboto_light"
-                tools:ignore="RtlSymmetry" />
+                tools:ignore="RtlSymmetry,TouchTargetSizeCheck,TextContrastCheck,TextContrastCheck,TextContrastCheck" />
 
             <ImageView
                 android:id="@+id/btnEmoji"
@@ -320,7 +320,8 @@
                 android:contentDescription="@string/app_name"
                 android:padding="@dimen/_8sdp"
                 android:src="@drawable/ic_baseline_insert_emoticon_24"
-                app:tint="@color/blue" />
+                app:tint="@color/blue"
+                tools:ignore="ImageContrastCheck" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
@@ -452,7 +453,7 @@
 
     </androidx.cardview.widget.CardView>
 
-    <ProgressBar
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/animationView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

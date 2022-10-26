@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg"
-    tools:context=".activities.ChatActivity">
+    android:background="@drawable/bg">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
@@ -45,8 +44,8 @@
                 android:layout_height="11dp"
                 android:layout_weight="1"
                 android:backgroundTint="#B1ADAD"
-                android:tint="#B1ADAD"
-                app:srcCompat="@drawable/ic_attachment" />
+                app:srcCompat="@drawable/ic_attachment"
+                app:tint="#B1ADAD" />
 
             <ImageView
                 android:id="@+id/camera"
@@ -54,8 +53,8 @@
                 android:layout_height="16dp"
                 android:layout_marginRight="5dp"
                 android:layout_weight="1"
-                android:tint="#B1ADAD"
-                app:srcCompat="@drawable/ic_camera" />
+                app:srcCompat="@drawable/ic_camera"
+                app:tint="#B1ADAD" />
 
         </LinearLayout>
 
